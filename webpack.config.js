@@ -1,13 +1,14 @@
 const path = require('path');
 
 // npm install webpack webpack-cli --save-dev
+// npx webpack --watch
 // npm install --save-dev style-loader css-loader
 // npm install --save-dev csv-loader xml-loader
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
