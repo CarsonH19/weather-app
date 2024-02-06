@@ -1,5 +1,9 @@
 const path = require('path');
 
+// npm install webpack webpack-cli --save-dev
+// npm install --save-dev style-loader css-loader
+// npm install --save-dev csv-loader xml-loader
+
 module.exports = {
   entry: './src/index.js',
   output: {
