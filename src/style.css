@@ -135,12 +135,15 @@ body {
 	margin: 8px;
 }
 
+.weather-box p {
+	margin: 8px;	
+}
+
 .weather-box .temperature {
 	position: relative;
 	color: #06283D;
 	font-size: 3rem;
 	font-weight: 880;
-	margin-left: -16px;
 }
 
 .weather-box .temperature span {
@@ -269,7 +272,7 @@ footer {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
 }
 
