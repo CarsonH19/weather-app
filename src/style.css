@@ -227,6 +227,18 @@ body {
 	opacity: 0;
 }
 
+.fade-in {
+	animation: 0.5s fadeIn forwards;
+	animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+	to {
+		scale: 1;
+		opacity: 1;
+	}
+}
+
 /* Responsive */
 /* Example: Mobile-first approach */
 
