@@ -5,6 +5,10 @@ const path = require('path');
 // npm install --save-dev style-loader css-loader
 // npm install --save-dev csv-loader xml-loader
 
+// GitHub Pages Hosting:
+// npm run gh-deploy <already have a gh-pages branch>
+// npm run gh-deploy-init <don't have a gh-pages branch>
+
 module.exports = {
   entry: './src/index.js',
   output: {
