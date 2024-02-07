@@ -92,7 +92,7 @@ body {
 .search-box input {
 	color: #06283D;
 	width: 80%;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 	padding-left: 32px;
@@ -131,16 +131,15 @@ body {
 }
 
 .weather-box img {
-	width: 60%;
-	margin-top: 30px;
+	width: 20%;
+	margin: 8px;
 }
 
 .weather-box .temperature {
 	position: relative;
 	color: #06283D;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 880;
-	margin-top: 30px;
 	margin-left: -16px;
 }
 
@@ -161,7 +160,6 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 30px;
 }
 
 .weather-details .humidity,
@@ -174,7 +172,7 @@ body {
 
 .weather-details .humidity {
 	padding-left: 20px;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 .weather-details .wind {
@@ -227,7 +225,7 @@ body {
 	opacity: 0;
 }
 
-.fade-in {
+.fadeIn {
 	animation: 0.5s fadeIn forwards;
 	animation-delay: 0.5s;
 }

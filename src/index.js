@@ -35,8 +35,8 @@ search.addEventListener("click", () => {
       const image = document.querySelector(".weather-box img");
       const temperature = document.querySelector(".weather-box .temperature");
       const description = document.querySelector(".weather-box .description");
-      const humidity = document.querySelector(".weather-box .humidity span");
-      const wind = document.querySelector(".weather-box .wind span");
+      const humidity = document.querySelector(".weather-details .humidity span");
+      const wind = document.querySelector(".weather-details .wind span");
 
       // Assuming json.current.condition.icon is "url(//cdn.weatherapi.com/weather/64x64/night/113.png)"
       const relativeUrl = json.current.condition.icon.replace(
@@ -50,10 +50,8 @@ search.addEventListener("click", () => {
         image.src = '';
       }
 
-      temperature.innerHTML = `${parseInt(
-        json.current.condition.temperature
-      )}<span>Degrees C</span>`;
-      // temperature.innerHTML = `${parseInt(json.current.condition.temperature)}<span>Degrees C</span>`;
+      temperature.innerHTML = `${json.current.temp_f}<span>°F</span>`;
+      description.innerHTML = `${json.current.condition.text}`;
       humidity.innerHTML = `${json.current.humidity}%`;
       wind.innerHTML = `${parseInt(json.current.wind_mph)}m/h`;
 
@@ -61,7 +59,7 @@ search.addEventListener("click", () => {
       weatherDetails.style.display = '';
       weatherBox.classList.add('fadeIn');
       weatherDetails.classList.add('fadeIn');
-      container.style.height = '590px';
+      container.style.height = '350px';
 
       console.log(json);
     });
