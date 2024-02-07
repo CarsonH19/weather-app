@@ -255,3 +255,30 @@ body {
 /* Media query for extra-large devices */
 /* Styles for extra-large devices (e.g., large desktops) */
 /* @media (min-width: 1200px) {} */
+
+
+/* FOOTER */
+
+footer {
+	color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.fa-github {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
